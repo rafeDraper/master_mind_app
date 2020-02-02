@@ -1,5 +1,6 @@
 require 'sinatra'
+require 'sinatra/reloader' if development?
 
 get '/' do
-  'Hello Master Mind'
+  erb :index
 end
