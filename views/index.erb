@@ -7,14 +7,24 @@
   <title>Master Mind</title>
 </head>
 <body>
-  <div class="container">
-    <section>
-      <h1>Master Mind</h1>
-      <p>for more info click on the 'i'</p>
-    </section>
-    <h1>TEST!</h1>
-  
-  </div>
-  
+  <main>
+    <h2>Welcome to Master Mind game</h2>
+    <p>Mastermind is considered "the challenging game of logic and deduction."
+      Like cracking codes? Mastermind will get you thinking while you try to crack
+      a four colored code set by your partner in only 10 moves or fewer. Cryptic
+      clues are given to help you know which color in which position.</p>
+    <p> Mastermind is only a two player game. Each game is different
+      and with over 2,000 possible code combinations, every game is guaranteed
+      to get you thinking. All game pieces are conveniently stored in the
+      Mastermind game unit. Try to crack the code and play Mastermind today!</p>  
+    <form action="/" method="POST">
+      <select name="role" >
+        <option selected>Choose a Role</option>
+        <option value="codebreaker">codebreaker</option>
+        <option value="codemaker">codemaker</option>
+      </select>
+      <input type="submit" value="play!">
+    </form>
+  </main>
 </body>
 </html>
