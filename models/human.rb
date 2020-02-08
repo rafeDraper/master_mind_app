@@ -33,7 +33,7 @@ class Human < Codemaker
   def get_and_validate_input
     input = gets.chomp
 
-    while !input_valid?(input)
+    until input_valid?(input)
       print 'Your input is invalid. Please try again! (eg. 1,2,3): '
       input = gets.chomp
     end
@@ -45,9 +45,9 @@ class Human < Codemaker
   def input_valid?(input)
     input_arr = input.split(',').map(&:to_i)
     if input_arr.size > @board.holes || !input_arr.all? { |i| i <= @board.pegs }
-      return false
+      false
     else
-      return true
+      true
     end
   rescue StandardError
     false

@@ -28,4 +28,3 @@ class String
     end
   end
 end
-

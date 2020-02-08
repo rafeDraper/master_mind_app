@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'sysrandom/securerandom' if development?
 require 'sinatra/reloader'       if development?
