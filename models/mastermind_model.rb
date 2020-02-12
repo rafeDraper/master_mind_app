@@ -9,9 +9,9 @@ class Mastermind
   end
 
   def generate_code
-    
+    code = [rand(9), rand(9), rand(9), rand(9)]
+    code.join('')
   end
 
-  def compare_code()
-  end
+  def compare_code; end
 end
