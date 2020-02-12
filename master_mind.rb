@@ -16,11 +16,15 @@ get '/' do
 end
 
 post '/' do
-  session[:active_game]
   redirect params[:role]
 end
 
 get '/codebreaker' do
-  session[:active_game]
-  erb :game
+  session[:codebraker]
+  erb :codebraker
+end
+
+get '/codemaker' do
+  session[:codemaker]
+  erb :codemaker
 end

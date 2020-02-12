@@ -1,5 +1,5 @@
 body {
-  max-width: 960px;
+  max-width: auto;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -15,6 +15,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 80px;
 }
 
 .selector {
