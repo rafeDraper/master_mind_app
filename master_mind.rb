@@ -20,8 +20,8 @@ post '/' do
 end
 
 get '/codebreaker' do
-  session[:codebraker]
-  erb :codebraker
+  session[:codebreaker]
+  erb :codebreaker
 end
 
 get '/codemaker' do
