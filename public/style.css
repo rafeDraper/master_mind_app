@@ -1,27 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700&display=swap');
+
+:root {
+  --light: #427565;
+  --light_medium: #31574B;
+  --medium: #1D332C;
+  --dark_medium: #13211D;
+  --dark: #060A09;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  max-width: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  font-family: "Archivo Narrow";
+  font-size: 1rem;
+  margin: 0;
+  color: azure;
 }
 
-.wrapper {
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--light);
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 7rem;
+  letter-spacing: -4px;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h2, p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+label {
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.head {
+  background: var(--medium);
+  padding: 2.5rem 2.5rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 375) {
+  .head {
+    padding: 3rem;
+  }
+}
+
+.intro_section, .form_section {
+  margin: 0 auto 1.25rem auto;
+  padding: 1rem;
+}
+
+.form_selector {
+  display: block;
+  height: 2.25rem;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.form_button {
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background: var(--light_medium);
+  color: inherit;
+  border: 1px solid rgb(22, 22, 22);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.footer_content {
+  display: flex;
   justify-content: center;
-  align-content: flex-start;
-  width: 500px;
-  height: 600px;
-  background-color: aquamarine;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 80px;
-}
-
-.selector {
-  padding-top: 20px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+  font-size: .75rem;
+  margin: 2rem 2rem;
 }
