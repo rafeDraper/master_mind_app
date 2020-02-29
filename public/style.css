@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Open+Sans&display=swap');
 
 :root {
   --light: #427565;
@@ -13,81 +13,70 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
+
+
+/* Initial Settings */
 
 body {
-  font-family: "Archivo Narrow";
-  font-size: 1rem;
-  margin: 0;
-  color: azure;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
   background: var(--light);
 }
 
-h2 {
+header {
+  color: var(--dark_medium);
+  font-family: 'Bowlby One SC';
   font-weight: 700;
-  text-align: center;
-  font-size: 7rem;
-  letter-spacing: -4px;
 }
 
 p {
-  font-size: 1.3rem;
+  font-family: 'Open Sans';
+  margin: 1rem 0 1.2rem;
+  color: whitesmoke;
 }
 
-h2, p {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-label {
+.wrapper {
+  height: 100%;
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.4rem;
 }
+
+/* Container */
 
 .container {
-  width: 100%;
-  margin: 3rem auto 0 auto;
-}
-
-@media (min-width: 375px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+ background-color: var(--light_medium);
+ width: 700px;
+ height: 800px;
+ padding: 4rem 5rem;
+ border-radius: 5px;
 }
 
 .head {
-  background: var(--medium);
-  padding: 2.5rem 2.5rem;
-  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 6.4rem;
 }
 
-@media (min-width: 375) {
-  .head {
-    padding: 3rem;
-  }
+.head h2 {
+  font-size: 7rem;
 }
 
-.intro_section, .form_section {
-  margin: 0 auto 1.25rem auto;
-  padding: 1rem;
+.intro_section {
+  width: 100%;
+  color: white;
+}
+
+/* Form Section */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_selector {
+  margin-bottom: 1rem;
 }
 
 .form_selector {
@@ -102,18 +91,17 @@ label {
 .form_button {
   display: block;
   width: 100%;
-  margin-top: 2rem;
   padding: 0.75rem;
-  background: var(--light_medium);
-  color: inherit;
-  border: 1px solid rgb(22, 22, 22);
+  background: var(--medium);
+  border: none;
+  color: white;
   border-radius: 0.25rem;
   cursor: pointer;
 }
 
 .footer_content {
-  display: flex;
-  justify-content: center;
   font-size: .75rem;
-  margin: 2rem 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: inherit;
 }

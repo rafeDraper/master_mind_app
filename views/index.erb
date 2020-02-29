@@ -10,37 +10,37 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrapper">
+      <div class="container">
     <header class="head">
-      <div class="intro_section">
-        <h2>MASTER MIND</h2>
-        <p><i>Mastermind</i> is considered "the challenging game of logic and deduction."
-          Like cracking codes? Mastermind will get you thinking while you try to crack
-          a four colored code set by your partner in only 10 moves or fewer. Cryptic
-          clues are given to help you know which color in which position.</p>
-        <p>Mastermind is only a two player game. Each game is different
+      <h2>MASTER MIND</h2>
+    </header>
+    <div class="intro_section">
+      <p><i>Mastermind</i> is considered "the challenging game of logic and deduction."
+        Like cracking codes? Mastermind will get you thinking while you try to crack
+        a four colored code set by your partner in only 10 moves or fewer. Cryptic
+        clues are given to help you know which color in which position.</p>
+      <p>Mastermind is only a two player game. Each game is different
         and with over 2,000 possible code combinations, every game is guaranteed
         to get you thinking. All game pieces are conveniently stored in the
         Mastermind game unit. Try to crack the code and play <i>Mastermind!</i></p>
-      </div>
-        
-      <div class="form_section">
-        <form action="/" method="POST">
-          <label for="dropdown">Select a role to play:</label>
-          <select name="dropdown" class="form_selector">
-            <option selected disabled>select one:</option>
-            <option value="codebreaker">codebreaker</option>
-            <option value="codemaker">codemaker</option>
-          </select>
-          <button id="submit" class="form_button">Submit</button>
-        </form>
-      </div>
-    </header>
+    </div>
+    <div class="form_section">
+      <p>Select a role to play</p>
+      <form action="/" method="GET">
+        <select name="dropdown" class="form_selector">
+          <option selected disabled>select one:</option>
+          <option value="codebreaker">codebreaker</option>
+          <option value="codemaker">codemaker</option>
+        </select>
+        <button id="submit" class="form_button">Submit</button>
+      </form>
+    </div>
+  </div>
   </div>
   <footer class="end_footer">
     <div class="footer_content">
-      <div class="co">Copyrights ©︎ 2020 </div> | 
-      <div>App by Rafe Draper</div>
+      <div><p>Copyrights ©︎ 2020 | App by Rafe Draper</p></div>
     </div>
   </footer>
 </body>
