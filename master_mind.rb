@@ -3,6 +3,7 @@
 require 'sinatra'
 require 'sysrandom/securerandom' if development?
 require 'sinatra/reloader'       if development?
+require './models/mastermind_model'
 
 configure do
   enable :sessions
@@ -12,19 +13,21 @@ configure do
 end
 
 get '/' do
+  session.delete(:game)
   erb :index
 end
 
 post '/' do
-  redirect params[:role]
+  session[:game] = Mastermind.new(params[:player_role])
+  redirect params[:player_role]
 end
 
 get '/codebreaker' do
-  session[:codebreaker]
+  game = session[:game]
   erb :codebreaker
 end
 
 get '/codemaker' do
-  session[:codemaker]
+  game = session[:game]
   erb :codemaker
 end

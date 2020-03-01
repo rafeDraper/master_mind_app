@@ -3,6 +3,7 @@
 require './models/mastermind_model'
 
 RSpec.describe Mastermind do
+  
   context 'initializing' do
     it 'should let the user chose a role' do
       codemaker = Mastermind.new('codemaker')

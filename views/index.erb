@@ -27,14 +27,16 @@
     </div>
     <div class="form_section">
       <p>Select a role to play</p>
-      <form action="/" method="GET">
-        <select name="dropdown" class="form_selector">
+
+      <form action="/" method="POST">
+        <select name="player_role" id="role" class="form_selector">
           <option selected disabled>select one:</option>
-          <option value="codebreaker">codebreaker</option>
-          <option value="codemaker">codemaker</option>
+          <option value="codebreaker" name="player_role">codebreaker</option>
+          <option value="codemaker" name="player_role">codemaker</option>
         </select>
         <button id="submit" class="form_button">Submit</button>
       </form>
+      
     </div>
   </div>
   </div>
